@@ -1,0 +1,32 @@
+GET http://localHost:3001/movies/
+###
+GET http://localHost:3001/movies/79
+
+###
+POST http://localHost:3001/movies/
+Content-Type: application/json;
+
+{
+  "directorId": 6,
+  "movieName": "Jurassic Park",
+  "leadActor": "Jeff Goldblum"
+}
+
+###
+PUT http://localHost:3001/movies/79/
+Content-Type: application/json;
+
+{
+  "directorID": 24,
+  "movieName":"thor",
+  "leadActor":"Christopher Hemsworth"
+}
+###
+DELETE  http://localHost:3001/movies/79/
+
+###
+GET http://localHost:3001/directors/
+
+###
+
+GET http://localHost:3001/directors/15/movies/
